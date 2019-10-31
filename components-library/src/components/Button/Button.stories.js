@@ -7,7 +7,7 @@ import './Button.css'
 storiesOf('Button', module)
     .add('Primary', () => <Button label="Primary" />)
 
-    storiesOf('Button', module)
+storiesOf('Button', module)
     .add('Primary', () => <Button
         label="Do Something"
         type="primary"
@@ -21,16 +21,30 @@ storiesOf('Button', module)
         label="Do Something"
         type="Prioutline"
     />)
-    // .add('Primary Outline', () => <Button
-    //     label="Do Something"
-    //     type="outline"
-    //     fill
-    // />)
-    .add('Danger', () => <Button 
+    .add('Primary Fill', () => <Button
+        label="Do Something"
+        type="prifill"
+    />)
+    .add('Large Primary', () => <Button
+        label="Do Something"
+        type="primary"
+        large
+    />)
+    .add('Large Primary Fill', () => <Button
+        label="Do Something"
+        type="prifill"
+        large
+    />)
+    .add('Large Primary Outline', () => <Button
+        label="Do Something"
+        type="Prioutline"
+        large
+    />)
+    .add('Danger', () => <Button
         label="Do Something"
         type="danger"
     />)
-    .add('Danger Hover', () => <Button 
+    .add('Danger Hover', () => <Button
         label="Do Something"
         type="danger"
         hover
@@ -39,23 +53,88 @@ storiesOf('Button', module)
         label="Do Something"
         type="danoutline"
     />)
-    .add('Success', () => <Button 
+    .add('Danger Fill', () => <Button
+        label="Do Something"
+        type="danFill"
+    />)
+    .add('Large Danger', () => <Button
+        label="Do Something"
+        type="danger"
+        large
+    />)
+    .add('Large Danger Fill', () => <Button
+        label="Do Something"
+        type="danFill"
+        large
+    />)
+    .add('Large Danger Outline', () => <Button
+        label="Do Something"
+        type="danoutline"
+        large
+    />)
+    .add('Success', () => <Button
         label="Do Something"
         type="success"
     />)
-    .add('Success Hover', () => <Button 
+    .add('Success Hover', () => <Button
         label="Do Something"
         type="success"
         hover
     />)
-    .add('Warning', () => <Button 
+    .add('Success Outline', () => <Button
+        label="Do Something"
+        type="sucoutline"
+    />)
+    .add('Success Fill', () => <Button
+        label="Do Something"
+        type="sucfill"
+    />)
+    .add('Large Success', () => <Button
+        label="Large Success"
+        type="success"
+        large
+    />)
+    .add('Large Success Fill', () => <Button
+        label="Do Something"
+        type="sucfill"
+        large
+    />)
+    .add('Large Success Outline', () => <Button
+        label="Do Something"
+        type="sucoutline"
+        large
+    />)
+    .add('Warning', () => <Button
         label="Do Something"
         type="warning"
     />)
-    .add('Warning Hover', () => <Button 
+    .add('Warning Hover', () => <Button
         label="Do Something"
         type="warning"
         hover
+    />)
+    .add('Warning Outline', () => <Button
+        label="Do Something"
+        type="waroutline"
+    />)
+    .add('Warning Fill', () => <Button
+        label="Do Something"
+        type="warfill"
+    />)
+    .add('Large Warning', () => <Button
+        label="Do Something"
+        type="warning"
+        large
+    />)
+    .add('Large Warning Fill', () => <Button
+        label="Do Something"
+        type="warfill"
+        large
+    />)
+    .add('Large Warning Outline', () => <Button
+        label="Do Something"
+        type="waroutline"
+        large
     />)
     .add('Default', () => <Button
         label="Do Something"
@@ -66,14 +145,26 @@ storiesOf('Button', module)
         type="default"
         hover
     />)
-    .add('Large Primary', () => <Button 
-        label="Large"
-        type="primary"
+    .add('Default Outline', () => <Button
+        label="Do Something"
+        type="deoutline"
+    />)
+    .add('Default Fill', () => <Button
+        label="Do Something"
+        type="defill"
+    />)
+    .add('Large Default', () => <Button
+        label="Do Something"
+        type="default"
         large
     />)
-    .add('Large Success', () => <Button
-        label="Large Success"
-        type="success"
+    .add('Large Default Fill', () => <Button
+        label="Do Something"
+        type="defill"
         large
     />)
-    
+    .add('Large Default Outline', () => <Button
+        label="Do Something"
+        type="deoutline"
+        large
+    />)

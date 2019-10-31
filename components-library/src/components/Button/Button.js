@@ -4,8 +4,8 @@ import './Button.css'
 // This is a functional component - just sent up a little differently as an arrow function!
 const Button = (props) => {
     let classList = ''
-    let types = ['primary', 'danger', 'success','warning','default','Prioutline','danoutline'
-                ]
+    let types = ['primary', 'danger', 'success','warning','default','Prioutline','danoutline',
+                'sucoutline','deoutline','waroutline','prifill','danFill','sucfill','warfill','defill']
     if (types.includes(props.type)){
         classList += ` button-${props.type}`
     }
@@ -15,9 +15,9 @@ const Button = (props) => {
     if (props.hover){
         classList += ` button-hover`
     }
-    if (props.fill){
-        classList += ` button-fill`
-    }
+    // if (props.fill){
+    //     classList += ` button-fill`
+    // }
     // if (props.outline){
     //     classList += ` button-outline`
     // }

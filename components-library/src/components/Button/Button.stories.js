@@ -1,8 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-
 import Button from './Button';
-import './Button.css'
+import './Button.css';
+import Heart from './hear.png';
+import Cart from './cart_2.png';
 
 storiesOf('Button', module)
     .add('Primary', () => <Button label="Primary" />)
@@ -23,6 +24,24 @@ storiesOf('Button', module)
     />)
     .add('Primary Fill', () => <Button
         label="Do Something"
+        type="prifill"
+    />)
+    .add('Primary Fill Cart', () => <Button
+        icon = {Cart}
+        label="Add To Cart"
+        type="prifill"
+    />)
+    .add('Primary Fill Favorites', () => <Button
+        icon = {Heart}
+        label="Add To Favorites"
+        type="prifill"
+    />)
+    .add('Primary Fill Heart Icon', () => <Button
+        icon = {Heart}
+        type="prifill"
+    />)
+    .add('Primary Fill Cart Icon', () => <Button
+        icon = {Cart}
         type="prifill"
     />)
     .add('Large Primary', () => <Button

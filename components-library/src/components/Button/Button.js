@@ -1,5 +1,7 @@
 import React from 'react';
-import './Button.css'
+import './Button.css';
+import Heart from './App.test.png';
+import Cart from './cart_2.png';
 
 // This is a functional component - just sent up a little differently as an arrow function!
 const Button = (props) => {
@@ -15,13 +17,11 @@ const Button = (props) => {
     if (props.hover){
         classList += ` button-hover`
     }
-    // if (props.fill){
-    //     classList += ` button-fill`
-    // }
-    // if (props.outline){
-    //     classList += ` button-outline`
-    // }
+    if (props.icon){
+        classList += ` button-primary`
+    }
     return <button className={classList}>
+        <img src = {props.icon}/>
         {props.label}
     </button>
 }

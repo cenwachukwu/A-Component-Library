@@ -1,0 +1,93 @@
+button{
+    color: white;
+    border-radius: 2px;
+    padding: 5px 25px;
+    opacity: 0.8;
+}
+.button-primary{
+    background-Color: #0069D9;
+    border: #0069D9;
+}
+.button-Prioutline{
+    background-color: white;
+    color: #0069D9;
+    border: 1px solid #0069D9;
+}
+.button-prifill{
+    background-color: rgba(12, 120, 235, 0.1);
+    color: #0069D9;
+    border: none; 
+}
+.button-danger{
+    background-Color: #ff0145;
+    border: #ff0145;
+}
+.button-danoutline{
+    background-color: white;
+    color: #ff0145;
+    border: 1px solid #ff0145;
+}
+.button-danFill{
+    background-color: rgba(240, 10, 71, 0.1);
+    color: #ff0145;
+    border: none; 
+}
+.button-success{
+    background-Color: #679c36;
+    border: #679c36;
+}
+.button-sucoutline{
+    background-color: white;
+    color: #679c36;
+    border: 1px solid #679c36;
+}
+.button-sucfill{
+    background-color: rgba(105, 156, 59, 0.1);
+    color: #679c36;
+    border: none;
+}
+.button-warning{
+    background-Color: #debf33;
+    border: 2px solid #debf33;
+    color: black;
+}
+.button-waroutline{
+    background-color: white;
+    color: #debf33;
+    border: 1px solid #debf33;
+}
+.button-warfill{
+    background-color: rgba(222, 192, 58, 0.1);
+    color: #debf33;
+    border: none;
+}
+.button-default{
+    background-color: rgb(32, 37, 41);
+    border: rgb(32, 37, 41);
+}
+.button-deoutline{
+    background-color: white;
+    color: rgb(32, 37, 41);
+    border: 1px solid rgb(32, 37, 41);
+}
+.button-defill{
+    background-color: rgba(32, 37, 41, 0.1);
+    color: rgb(32, 37, 41);
+    border: none;
+}
+
+.button-hover:hover{
+    opacity: 1;
+}
+.button-fill{
+    opacity: 0.25;
+    border: none;
+}
+.button-large {
+    padding: 10px 50px;
+    font-size: 15px;
+}
+
+
+
+/*# sourceMappingURL=main.css.map*/

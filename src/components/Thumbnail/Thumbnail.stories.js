@@ -6,7 +6,7 @@ storiesOf('Thumbnail', module) //here you name the component and from my underst
     .add('Macbook-transparent', () => //you name the story you're creating and using arrow functions, you call the componet youre adding data from and add props to it
         <Thumbnail />       //you have to call the component you're adding it from
     )
-    .add('Macbook-transparent', () => 
+    .add('Macbook-transparent-filled', () => 
         <Thumbnail      
-            fill />     //we add the fill prop to the thumbnail b/c we would use it in our 'if' statement to differenciate between each story
+            filled />     //we add the fill prop to the thumbnail b/c we would use it in our 'if' statement to differenciate between each story
     )

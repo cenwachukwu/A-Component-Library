@@ -8,9 +8,9 @@
     border-radius: 4px;
 }
 
-.macbook:hover{
+/* .macbook:hover{
     opacity: 0.1;
-}
+} */
 
 /* we set the display for iconshide to none, so that on onMouseLeave, the icons dont show any more */
 .iconshide {

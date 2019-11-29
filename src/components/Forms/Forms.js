@@ -4,6 +4,8 @@ import blackemptycheckbox from './images/blackemptybox.svg';
 import blackcheckbox from './images/blackcheckbox.svg';
 import bluecheckbox from './images/bluecheckbox.svg';
 import blueemptycheckbox from './images/blueemptybox.svg';
+import Plus from './images/plus.svg';
+import Minus from './images/minus.svg';
 
 
 class Forms extends React.Component {
@@ -12,37 +14,37 @@ class Forms extends React.Component {
         this.state = {
             count: this.props.count,
             step: this.props.step,
-            src: this.props.blackcheck?blackcheckbox:bluecheckbox //check if this.prop = blackcheckbox if not, then its bluecheckbox
+            src: this.props.blackcheck ? blackcheckbox : bluecheckbox //check if this.prop = blackcheckbox if not, then its bluecheckbox
         }
         this.increaseCount = this.increaseCount.bind(this);
         this.decreaseCount = this.decreaseCount.bind(this);
         this.checkCheckbox = this.checkCheckbox.bind(this)
     }
 
-    checkCheckbox(evt){
+    checkCheckbox(evt) {
         evt.preventDefault()
-        let newSrc; 
-        if(this.state.src === blackcheckbox){
-            newSrc= blackemptycheckbox;
-            this.setState ({
+        let newSrc;
+        if (this.state.src === blackcheckbox) {
+            newSrc = blackemptycheckbox;
+            this.setState({
                 src: newSrc
             })
         }
-        else if(this.state.src === bluecheckbox){
-            newSrc= blueemptycheckbox;
-            this.setState ({
+        else if (this.state.src === bluecheckbox) {
+            newSrc = blueemptycheckbox;
+            this.setState({
                 src: newSrc
             })
         }
-       else if(this.state.src === blackemptycheckbox){
-            newSrc= blackcheckbox;
-            this.setState ({
+        else if (this.state.src === blackemptycheckbox) {
+            newSrc = blackcheckbox;
+            this.setState({
                 src: newSrc
             })
         }
-        else if(this.state.src === blueemptycheckbox){
-            newSrc= bluecheckbox;
-            this.setState ({
+        else if (this.state.src === blueemptycheckbox) {
+            newSrc = bluecheckbox;
+            this.setState({
                 src: newSrc
             })
         }
@@ -70,13 +72,13 @@ class Forms extends React.Component {
         if (types.includes(this.props.type)) {
             classList += ` Forms-${this.props.type}`
         }
-        if (this.props.small){
+        if (this.props.small) {
             classList += ` Forms-${this.props.type}`
         }
-        if (this.props.small){
+        if (this.props.small) {
             classList += ` Forms-text`
         }
-        if (this.props.large){
+        if (this.props.large) {
             classList += ` Forms-text`
         }
         if (this.props.inputType === "email") {
@@ -109,20 +111,28 @@ class Forms extends React.Component {
                 </div>
             )
         }
-        if((this.props.blackcheck || this.props.bluecheck)){
+        if ((this.props.blackcheck || this.props.bluecheck)) {
             return (
                 <div>
-                    <img src= {this.state.src}alt="checkbox" onClick= {this.checkCheckbox}/> 
+                    <img src={this.state.src} alt="checkbox" onClick={this.checkCheckbox} />
                 </div>
             )
         }
         if (this.props.inputType === "counter") {
             let count = this.state.count
             return (
-                <div>
-                    <button onClick={this.increaseCount} />
-                    <div>{count}</div>
-                    <button onClick={this.decreaseCount} />
+                <div style={{display:"flex", flexDirection:"row", margin: "0", backgroundColor: "#F6F7F8", width:"6%"}}>
+                     <div style={{margin: "0 9px 0 8px"}}>
+                        <img src={Minus} onClick={this.decreaseCount} />
+                    </div>
+                    
+
+                    <div style={{margin: "5px"}}>{count}</div>
+
+                    <div style={{margin: "3px 8px 0px 8px"}}>
+                        <img src={Plus} onClick={this.increaseCount} />
+                    </div>
+
                 </div>
             )
         }

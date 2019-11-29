@@ -10,3 +10,7 @@ storiesOf('Thumbnail', module) //here you name the component and from my underst
         <Thumbnail      
             filled />     //we add the fill prop to the thumbnail b/c we would use it in our 'if' statement to differenciate between each story
     )
+    .add('Macbook transparent row', () =>
+        <Thumbnail
+            row/>
+    )

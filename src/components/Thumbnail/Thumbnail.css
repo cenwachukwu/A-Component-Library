@@ -8,9 +8,19 @@
     border-radius: 4px;
 }
 
-/* .macbook:hover{
-    opacity: 0.1;
-} */
+.mac-transparent-row{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 2px solid #F6F7F8;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
 /* we set the display for iconshide to none, so that on onMouseLeave, the icons dont show any more */
 .iconshide {
@@ -32,3 +42,4 @@ hr{
 p{
     margin: 0 0 0 70px;
 }
+

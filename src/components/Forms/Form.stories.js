@@ -24,57 +24,53 @@ storiesOf('Forms', module)
         label="Email"
         type="text"
         inputType="email"
-        large    
+        large
     />)
 
-    .add('Select',() => <Forms
+    .add('Select', () => <Forms
         // placeholder="select"
         label="select"
         type="select"
         inputType="select"
     />)
-    .add('Select fill',() => <Forms
+    .add('Select fill', () => <Forms
         placeholder="select"
         label="select"
         type="select"
         inputType="select"
     />)
 
-    .add('Voucher',() => <Forms
+    .add('Voucher', () => <Forms
         placeholder="Vouchercode"
         label="Voucher code"
         type="text"
-        inputType="submit"    
+        inputType="submit"
     />)
-    .add('Voucher oher',() => <Forms
+    .add('Voucher oher', () => <Forms
         placeholder="Vouchercode"
         label="Voucher code"
         type="text"
-        inputType="submit"   
+        inputType="submit"
     />)
 
-    .add('Checkbox',() => <Forms
-        placeholder=""
-        type="checkbox"
-        inputType="checkbox"
-        check={false}
-        // key="true"
-    />)
-    .add('Checkbox blue',() => <Forms
-        placeholder=""
-        type="checkbox"
-        inputType="checkbox"
-    />)
-    .add('Checkbox text',() => <Forms   //with popups
-        placeholder=""
-        type="checkbox"
-        inputType="checkbox"
-    />)
+    .add('Checkbox black', () =>
+        <Forms
+            blackcheck />
+    )
+    .add('Checkbox blue', () => 
+        <Forms
+            bluecheck />
+    )
+    .add('Checkbox text', () => 
+        <Forms
+            blackcheck
+            text/>
+    )
     .add('Counter', () => <Forms
-        type = "count"
-        inputType = "counter"
-        count = {0}
-        step = {6}
+        type="count"
+        inputType="counter"
+        count={0}
+        step={6}
     />)
 
 

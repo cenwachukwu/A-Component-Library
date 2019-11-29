@@ -1,6 +1,10 @@
 import React from "react";
 import './Forms.css';
-// import { ReactComponent } from "*.svg";
+import blackemptycheckbox from './images/blackemptybox.svg';
+import blackcheckbox from './images/blackcheckbox.svg';
+import bluecheckbox from './images/bluecheckbox.svg';
+import blueemptycheckbox from './images/blueemptybox.svg';
+
 
 class Forms extends React.Component {
     constructor(props) {
@@ -8,12 +12,42 @@ class Forms extends React.Component {
         this.state = {
             count: this.props.count,
             step: this.props.step,
-            checked: this.props.check
+            src: this.props.blackcheck?blackcheckbox:bluecheckbox //check if this.prop = blackcheckbox if not, then its bluecheckbox
         }
         this.increaseCount = this.increaseCount.bind(this);
         this.decreaseCount = this.decreaseCount.bind(this);
-        // this.handleCheckbox = this.handleCheckbox(this);
+        this.checkCheckbox = this.checkCheckbox.bind(this)
     }
+
+    checkCheckbox(evt){
+        evt.preventDefault()
+        let newSrc; 
+        if(this.state.src === blackcheckbox){
+            newSrc= blackemptycheckbox;
+            this.setState ({
+                src: newSrc
+            })
+        }
+        else if(this.state.src === bluecheckbox){
+            newSrc= blueemptycheckbox;
+            this.setState ({
+                src: newSrc
+            })
+        }
+       else if(this.state.src === blackemptycheckbox){
+            newSrc= blackcheckbox;
+            this.setState ({
+                src: newSrc
+            })
+        }
+        else if(this.state.src === blueemptycheckbox){
+            newSrc= bluecheckbox;
+            this.setState ({
+                src: newSrc
+            })
+        }
+    }
+
     increaseCount = (evt) => {
         evt.preventDefault()
         console.log(this.state.count)
@@ -75,10 +109,10 @@ class Forms extends React.Component {
                 </div>
             )
         }
-        if (this.props.inputType === "checkbox") {
+        if((this.props.blackcheck || this.props.bluecheck)){
             return (
                 <div>
-                    <input type="checkbox" defaultChecked={true}/>
+                    <img src= {this.state.src}alt="checkbox" onClick= {this.checkCheckbox}/> 
                 </div>
             )
         }

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="60" viewBox="0 0 300 60">
+  <g id="select" transform="translate(-836 -659)">
+    <rect id="Rectangle_40" data-name="Rectangle 40" width="300" height="60" rx="4" transform="translate(836 659)" fill="#fafafb"/>
+    <text id="Select-2" data-name="Select" transform="translate(851 694)" fill="#22262a" font-size="14" font-family="Helvetica" letter-spacing="0.025em"><tspan x="0" y="0">Select</tspan></text>
+    <path id="arrow_down" data-name="arrow down" d="M936.333,717,933,713h6.667Z" transform="translate(176 -25.999)" fill="#22262a"/>
+  </g>
+</svg>

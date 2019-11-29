@@ -11,6 +11,12 @@ import Macbook from './thumbnail-images/macbook-icon.svg';
 import Price from './thumbnail-images/price-icon.svg';
 import Stars from './thumbnail-images/stars-icon.svg';
 import Beats from './thumbnail-images/beats-icon.svg';
+import Test from './thumbnail-images/test-item.svg';
+import Reviews from './thumbnail-images/reviews.svg';
+import Submit from './thumbnail-images/submit.svg';
+import Cart from './thumbnail-images/cart.svg';
+import heart from './thumbnail-images/heart.svg';
+
 
 //next we make our class component, we are making it a class b/c we would use state to make our hover component
 class Thumbnail extends Component {
@@ -51,16 +57,63 @@ class Thumbnail extends Component {
         })
     }
     render() {
+        if (this.props.macbookbeats) {
+            return (
+                <div className="mac-transparent-row" style={{
+                    width: "70%", border: "none",
+                    display: "grid", gridTemplateColumns: "repeat(2, 1fr)"}}>
+                    <div>
+                        <img src={Test} style={{ height: "200px" }} />
+                    </div>
+                    <div className="info" style={{ width:"100%",display: "flex", flexDirection: "column", marginLeft: "-210px" }}>
+                        <div>
+                            <p style={{ fontSize: "20px", margin: "5px" }}>Beats Solo 2 on Ear Headphones - Black</p>
+                        </div>
+                        <div style={{ display: "flex", flexDirection: "row" }}>
+                            <div style={{ margin: "0 5px" }}>
+                                <img src={Stars} />
+                            </div>
+                            <div style={{ margin: "0 5px" }}>
+                                <img src={Reviews} />
+                            </div>
+                            <div style={{ margin: "0 5px" }}>
+                                <img src={Submit} />
+                            </div>
+                        </div>
+                        <div>
+                            <img src={Price} style={{margin: "5px"}}/>
+                        </div>
+                        <div>
+                            <p style={{margin: "5px"}}>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum,
+                                gravida et mattis vulputate, tristique ut lectus. Sed et lectus
+                            lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...</p>
+                        </div>
+                        <div style={{ display: "flex", flexDirection: "row"}}>
+                            <div style={{ margin: "5px" }}>
+                                <img src={Cart} />
+                            </div>
+                            <div style={{ margin: "5px" }}>
+                                <img src={heart} />
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            )
+        }
+
         if (this.props.beats) {
             return (
-                <div className="mac-transparent-row" style={{ width: "30%" }}>
+                <div className="mac-transparent-row" style={{ width: "30%", border: "none" }}>
                     <div style={{ margin: "0 0 0 20px" }}>
                         <img src={Beats} />
                     </div>
-                    <div className="info" style={{ width: "180px"}}>
+                    <div className="info" style={{ width: "180px" }}>
                         <p style={{ margin: "0 5px 0 0px" }}>Beats solo 2 on Ear Headphones - Black</p>
-                        <img src={Stars} style={{ margin: "0 60px 0 0" }}/>
-                        <img src={Price} style={{ margin: "0 50px 0 0" }}/>
+                        <img src={Stars} style={{ margin: "0 60px 0 0" }} />
+                        <img src={Price} style={{ margin: "0 50px 0 0" }} />
                         <img className={this.state.iconstatus} src={CartHeartFilled} />
                     </div>
 

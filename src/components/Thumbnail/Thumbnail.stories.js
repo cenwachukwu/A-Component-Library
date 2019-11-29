@@ -18,3 +18,7 @@ storiesOf('Thumbnail', module) //here you name the component and from my underst
         <Thumbnail
             beats/>
     )
+    .add('Beats Macbook', () => 
+        <Thumbnail
+        macbookbeats/>
+    )

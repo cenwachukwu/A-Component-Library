@@ -10,7 +10,7 @@ import GroupedIcon from './thumbnail-images/icon-group.svg';
 import Macbook from './thumbnail-images/macbook-icon.svg';
 import Price from './thumbnail-images/price-icon.svg';
 import Stars from './thumbnail-images/stars-icon.svg';
-import { background } from '@storybook/theming';
+import Beats from './thumbnail-images/beats-icon.svg';
 
 //next we make our class component, we are making it a class b/c we would use state to make our hover component
 class Thumbnail extends Component {
@@ -51,15 +51,32 @@ class Thumbnail extends Component {
         })
     }
     render() {
+        if (this.props.beats) {
+            return (
+                <div className="mac-transparent-row" style={{ width: "30%" }}>
+                    <div style={{ margin: "0 0 0 20px" }}>
+                        <img src={Beats} />
+                    </div>
+                    <div className="info" style={{ width: "180px"}}>
+                        <p style={{ margin: "0 5px 0 0px" }}>Beats solo 2 on Ear Headphones - Black</p>
+                        <img src={Stars} style={{ margin: "0 60px 0 0" }}/>
+                        <img src={Price} style={{ margin: "0 50px 0 0" }}/>
+                        <img className={this.state.iconstatus} src={CartHeartFilled} />
+                    </div>
+
+                </div>
+            )
+        }
+
         if (this.props.row) {
             return (
-                <div className="mac-transparent-row" style={{ backgroundColor: this.state.backgroundColor}}
+                <div className="mac-transparent-row" style={{ backgroundColor: this.state.backgroundColor }}
                     onMouseEnter={this.havebackgroundColor} onMouseLeave={this.removebackgroundColor}>
                     <div>
                         <img className="macbook" src={Macbook} />
                     </div>
                     <div className="info">
-                        <p style={{ margin: "0 0 0 50px"}}>Apple Macbook Pro</p>
+                        <p style={{ margin: "0 0 0 50px" }}>Apple Macbook Pro</p>
                         <img src={Stars} />
                         <img src={Price} />
                         <img className={this.state.iconstatus} src={CartHeartFilled} />

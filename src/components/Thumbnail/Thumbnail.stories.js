@@ -8,5 +8,5 @@ storiesOf('Thumbnail', module) //here you name the component and from my underst
     )
     .add('Macbook-transparent', () => 
         <Thumbnail      
-            fill />     //we add the fill prop to the thumnail b/c we would use it in our 'if' statement to differnciate between each story
+            fill />     //we add the fill prop to the thumbnail b/c we would use it in our 'if' statement to differenciate between each story
     )

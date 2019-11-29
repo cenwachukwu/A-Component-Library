@@ -1,0 +1,34 @@
+.mac-transparent{
+    height: 370px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 2px solid #F6F7F8;
+    border-radius: 4px;
+}
+
+.macbook:hover{
+    opacity: 0.1;
+}
+
+/* we set the display for iconshide to none, so that on onMouseLeave, the icons dont show any more */
+.iconshide {
+    display: none;
+}
+/* we display for iconshow and make the position absolute, so that on onMouseShow, the icons show
+something to note: the style top basically means x% from the top of the container
+*/
+.iconshow {
+    position: absolute;
+    left: 8%;
+    top: 12%; 
+}
+
+hr{
+    width: 80%;
+}
+
+p{
+    margin: 0 0 0 70px;
+}

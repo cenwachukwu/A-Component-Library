@@ -3,8 +3,7 @@ import { storiesOf } from '@storybook/react';
 import Forms from './Forms';
 import './Forms.css';
 
-// storiesOf('Forms', module)
-//     .add('Forms', () => <input label="Email" />)
+
 storiesOf('Forms', module)
     .add('Primary Small', () => <Forms
         placeholder="Email"
@@ -19,7 +18,6 @@ storiesOf('Forms', module)
         label="Email"
         type="text"
         inputType="email"
-        regular
     />)
     .add('Primary Large', () => <Forms
         placeholder="Email"
@@ -46,21 +44,21 @@ storiesOf('Forms', module)
         placeholder="Vouchercode"
         label="Voucher code"
         type="text"
-        inputType="submit"
-        
+        inputType="submit"    
     />)
-    .add('Voucher',() => <Forms
+    .add('Voucher oher',() => <Forms
         placeholder="Vouchercode"
         label="Voucher code"
         type="text"
-        inputType="submit"
-        
+        inputType="submit"   
     />)
 
     .add('Checkbox',() => <Forms
         placeholder=""
         type="checkbox"
         inputType="checkbox"
+        check={false}
+        // key="true"
     />)
     .add('Checkbox blue',() => <Forms
         placeholder=""
@@ -75,7 +73,8 @@ storiesOf('Forms', module)
     .add('Counter', () => <Forms
         type = "count"
         inputType = "counter"
-        step = "5"
+        count = {0}
+        step = {6}
     />)
 
 

@@ -37,7 +37,7 @@ class Forms extends React.Component {
             classList += ` Forms-${this.props.type}`
         }
         if (this.props.small){
-            classList += ` Forms-${props.type}`
+            classList += ` Forms-${this.props.type}`
         }
         if (this.props.small){
             classList += ` Forms-text`

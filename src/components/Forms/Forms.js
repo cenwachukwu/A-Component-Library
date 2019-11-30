@@ -111,6 +111,19 @@ class Forms extends React.Component {
                 </div>
             )
         }
+        if (this.props.text) {
+            return (
+                <div style={{ display: "flex", flexDirection: "row", margin: "0", width: "45%" }}>
+                    <div>
+                        <img src={this.state.src} alt="checkbox" onClick={this.checkCheckbox} />
+                    </div>
+                    <div style={{marginLeft:"5px"}}>
+                        <p style={{marginLeft:"-3px"}}>Dont show this popup again</p>
+                    </div>
+                </div>
+
+            )
+        }
         if ((this.props.blackcheck || this.props.bluecheck)) {
             return (
                 <div>
@@ -121,15 +134,15 @@ class Forms extends React.Component {
         if (this.props.inputType === "counter") {
             let count = this.state.count
             return (
-                <div style={{display:"flex", flexDirection:"row", margin: "0", backgroundColor: "#F6F7F8", width:"6%"}}>
-                     <div style={{margin: "0 9px 0 8px"}}>
+                <div style={{ display: "flex", flexDirection: "row", margin: "0", backgroundColor: "#F6F7F8", width: "6%" }}>
+                    <div style={{ margin: "0 9px 0 8px" }}>
                         <img src={Minus} onClick={this.decreaseCount} />
                     </div>
-                    
 
-                    <div style={{margin: "5px"}}>{count}</div>
 
-                    <div style={{margin: "3px 8px 0px 8px"}}>
+                    <div style={{ margin: "5px" }}>{count}</div>
+
+                    <div style={{ margin: "3px 8px 0px 8px" }}>
                         <img src={Plus} onClick={this.increaseCount} />
                     </div>
 

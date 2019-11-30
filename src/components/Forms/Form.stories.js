@@ -27,41 +27,68 @@ storiesOf('Forms', module)
         large
     />)
 
-    .add('Select', () => <Forms
-        // placeholder="select"
-        label="select"
-        type="select"
-        inputType="select"
-    />)
-    .add('Select fill', () => <Forms
-        placeholder="select"
-        label="select"
-        type="select"
-        inputType="select"
-    />)
-
-    .add('Voucher', () => 
+    .add('select', () =>
         <Forms
-            voucher/>
+            type="select"
+            special="select-css"
+            little />
     )
-    .add('Voucher oher', () => 
+    .add('select Reg', () =>
+        <Forms
+            type="select"
+            special="select-css"
+            reg />
+    )
+    .add('select Large', () =>
+        <Forms
+            type="select"
+            special="select-css"
+            large />
+    )
+    .add('select Fill', () =>
+        <Forms
+            type="select"
+            special="select-css"
+            fill
+            little />
+    )
+    .add('select Fill Reg', () =>
+        <Forms
+            type="select"
+            special="select-css"
+            fill
+            reg />
+    )
+    .add('select Fill Large', () =>
+        <Forms
+            type="select"
+            special="select-css"
+            fill
+            large />
+    )
+
+    .add('Voucher', () =>
+        <Forms
+            voucher />
+    )
+    .add('Voucher oher', () =>
         <Forms
             voucher
-            bigvoucher/>
+            bigvoucher />
     )
 
     .add('Checkbox black', () =>
         <Forms
             blackcheck />
     )
-    .add('Checkbox blue', () => 
+    .add('Checkbox blue', () =>
         <Forms
             bluecheck />
     )
-    .add('Checkbox text', () => 
+    .add('Checkbox text', () =>
         <Forms
             blackcheck
-            text/>
+            text />
     )
     .add('Counter', () => <Forms
         type="count"

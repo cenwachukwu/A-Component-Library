@@ -4,6 +4,43 @@ Forms{
 .Forms-text{
     padding: 5px;
 }
-.RedeemButton{
-    height: 150px;
+
+.select-css {
+    display: block;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #444;
+    line-height: 1;
+    padding: .5em 1.4em .5em .8em;
+    width: 250px;
+    max-width: 25%;
+    box-sizing: border-box;
+    border-radius: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('./images/arrowdown.svg');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+.select-css::-ms-expand {
+    display: none;
+}
+.select-css option {
+    font-weight:normal;
+}
+.select-fill{
+    background-color: #FAFAFB;
+}
+.select-reg{
+    font-size: 1rem;
+    width: 300px;
+    height: 46px;
+}
+.select-large{
+    font-size: 1rem;
+    width: 300px;
+    height: 60px;
 }

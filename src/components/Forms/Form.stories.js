@@ -5,27 +5,10 @@ import './Forms.css';
 
 
 storiesOf('Forms', module)
-    .add('Primary Small', () => <Forms
-        placeholder="Email"
-        label="Email"
-        type="text"
-        inputType="email"
-        small
+.add('Email', () => <Forms placeholder="Email" label="Email" type="text" inputType="email" little/>)
+.add('Email Reg', () => <Forms placeholder="Email" label="Email" type="text" inputType="email" reg/>)
+.add('Email Large', () => <Forms placeholder="Email" label="Email" type="text" inputType="email" large/>)
 
-    />)
-    .add('Primary Regular', () => <Forms
-        placeholder="Email"
-        label="Email"
-        type="text"
-        inputType="email"
-    />)
-    .add('Primary Large', () => <Forms
-        placeholder="Email"
-        label="Email"
-        type="text"
-        inputType="email"
-        large
-    />)
 
     .add('select', () =>
         <Forms
@@ -71,7 +54,7 @@ storiesOf('Forms', module)
         <Forms
             voucher />
     )
-    .add('Voucher oher', () =>
+    .add('Voucher Big', () =>
         <Forms
             voucher
             bigvoucher />

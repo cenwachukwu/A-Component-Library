@@ -67,30 +67,24 @@ class Forms extends React.Component {
     }
 
     render() {
-        let classList = ''
-        let types = ['select', 'text', 'checkbox']
-
-        if (types.includes(this.props.type)) {
-            classList += ` Forms-${this.props.type}`
-        }
-        if (this.props.small) {
-            classList += ` Forms-${this.props.type}`
-        }
-        if (this.props.small) {
-            classList += ` Forms-text`
-        }
-        if (this.props.large) {
-            classList += ` Forms-text`
-        }
-        if (this.props.inputType === "email") {
+        if (this.props.type == "text") {
+            let classList = ""
+            if (this.props.little) {
+                classList += " little-email"
+            }
+            if (this.props.reg) {
+                classList += " reg-email"
+            }
+            if (this.props.large) {
+                classList += " large-email"
+            }
             return (
-                <div>
-                    <form>
-                        <input type={this.props.type} className={classList} placeholder="Email"></input>
-                    </form>
-                </div>
+                <form>
+                    <input type={this.props.type} placeholder={this.props.placeholder} className={classList} />
+                </form>
             )
         }
+
         if (this.props.type == "select") {
             let classList = ""
             if (this.props.fill) {

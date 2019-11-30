@@ -6,6 +6,7 @@ import bluecheckbox from './images/bluecheckbox.svg';
 import blueemptycheckbox from './images/blueemptybox.svg';
 import Plus from './images/plus.svg';
 import Minus from './images/minus.svg';
+import Redeem from './images/redeem.svg';
 
 
 class Forms extends React.Component {
@@ -101,12 +102,25 @@ class Forms extends React.Component {
                 </div>
             )
         }
-        if (this.props.inputType === "submit") {
+        if (this.props.bigvoucher){
             return (
                 <div>
                     <form>
-                        <input type={this.props.type} className={classList} placeholder="Voucher code" />
-                        <input type="submit" className="RedeemButton" value="Redeeem Code"></input>
+                        <input type={this.props.type} placeholder="Voucher code" style={{height:"30px", padding:"10px", width:"245px"}}/>
+                        <button type="submit" value="RedeemButton" style={{height:"54px", backgroundColor:"#33A0FF", 
+                        borderTopRightRadius:"5px", borderBottomRightRadius:"5px"}}>Redeem</button>
+                    </form>
+                </div>
+            )
+        }
+
+        if (this.props.voucher) {
+            return (
+                <div>
+                    <form>
+                        <input type={this.props.type} placeholder="Voucher code" style={{height:"30px", padding:"5px"}}/>
+                        <button type="submit" value="RedeemButton" style={{height:"44px", backgroundColor:"#33A0FF", 
+                        borderTopRightRadius:"5px", borderBottomRightRadius:"5px"}}>Redeem</button>
                     </form>
                 </div>
             )
@@ -117,7 +131,7 @@ class Forms extends React.Component {
                     <div>
                         <img src={this.state.src} alt="checkbox" onClick={this.checkCheckbox} />
                     </div>
-                    <div style={{marginLeft:"5px"}}>
+                    <div style={{marginLeft:"10px"}}>
                         <p style={{marginLeft:"-3px"}}>Dont show this popup again</p>
                     </div>
                 </div>

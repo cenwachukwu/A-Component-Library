@@ -40,18 +40,15 @@ storiesOf('Forms', module)
         inputType="select"
     />)
 
-    .add('Voucher', () => <Forms
-        placeholder="Vouchercode"
-        label="Voucher code"
-        type="text"
-        inputType="submit"
-    />)
-    .add('Voucher oher', () => <Forms
-        placeholder="Vouchercode"
-        label="Voucher code"
-        type="text"
-        inputType="submit"
-    />)
+    .add('Voucher', () => 
+        <Forms
+            voucher/>
+    )
+    .add('Voucher oher', () => 
+        <Forms
+            voucher
+            bigvoucher/>
+    )
 
     .add('Checkbox black', () =>
         <Forms

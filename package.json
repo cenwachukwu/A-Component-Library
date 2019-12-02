@@ -1,7 +1,7 @@
 {
-  "name": "components-library",
-  "version": "0.1.0",
-  "private": true,
+  "name": "cenwachukwu-components-library",
+  "version": "1.0.0",
+  "private": false,
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",

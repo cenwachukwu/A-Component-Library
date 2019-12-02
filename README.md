@@ -21,3 +21,11 @@ Through research, I discovered that component Libraries are one of the huge adva
     * `npm install @storybook/react --save-dev`
 * To open the code in vs code, run code .
 * To run this storybook, enter the following command in your terminal: npm run storybook
+
+## Extras:
+* Deployed site:
+    * Netlify: https://gifted-hamilton-0abe26.netlify.com
+* Published site:
+    * NPM: https://www.npmjs.com/package/cenwachukwu-components-library
+* Link to repo:
+    * github: https://github.com/cenwachukwu/A-Component-Library

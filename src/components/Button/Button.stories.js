@@ -49,6 +49,12 @@ storiesOf('Button', module)
         type="primary"
         large
     />)
+    .add('Large Primary Hover', () => <Button
+        label="Do Something"
+        type="primary"
+        large
+        hover
+    />)
     .add('Large Primary Fill', () => <Button
         label="Do Something"
         type="prifill"
@@ -80,6 +86,12 @@ storiesOf('Button', module)
         label="Do Something"
         type="danger"
         large
+    />)
+    .add('Large Danger Hover', () => <Button
+        label="Do Something"
+        type="danger"
+        large
+        hover
     />)
     .add('Large Danger Fill', () => <Button
         label="Do Something"
@@ -113,6 +125,12 @@ storiesOf('Button', module)
         type="success"
         large
     />)
+    .add('Large Success Hover', () => <Button
+        label="Large Success"
+        type="success"
+        large
+        hover
+    />)
     .add('Large Success Fill', () => <Button
         label="Do Something"
         type="sucfill"
@@ -145,6 +163,12 @@ storiesOf('Button', module)
         type="warning"
         large
     />)
+    .add('Large Warning Hover', () => <Button
+        label="Do Something"
+        type="warning"
+        large
+        hover
+    />)
     .add('Large Warning Fill', () => <Button
         label="Do Something"
         type="warfill"
@@ -176,6 +200,12 @@ storiesOf('Button', module)
         label="Do Something"
         type="default"
         large
+    />)
+    .add('Large Default Hover', () => <Button
+        label="Do Something"
+        type="default"
+        large
+        hover
     />)
     .add('Large Default Fill', () => <Button
         label="Do Something"
